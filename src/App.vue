@@ -17,34 +17,45 @@
 </script>
 
 <template>
-  <header>
+  <div class="container-main">
     <div class="wrapper">
       <h1>Vibe check ✅</h1>
-      <span id="spanid">is you vibing bro?</span>
-      <div>
+      <span class="spanQuestion">is you vibing bro?</span>
+      <div class="buttons">
         <button class="btn1" @click="vibeDo">Type shii 🔥</button>
         <button class="btn2" @click="vibeDont">Nah fam 🥀</button>
       </div>
       <VideoVibe v-if="vibePass" :videoName="'/goat.mp4'" />
       <VideoVibe v-if="vibeImprove" :videoName="'/qeres.mp4'" />
     </div>
-  </header>
+  </div>
 </template>
 
 <style scoped>
-  header {
+  .container-main {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    padding: 20px;
+    background-image: linear-gradient(in lch, rgb(72, 35, 167), rgb(67, 3, 90));
   }
+  
   .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-    background-image: linear-gradient(rgb(123, 83, 183), rgb(83, 36, 146));
+    background-image: linear-gradient(in lch, rgb(157, 112, 225), rgb(83, 36, 146));
     border-radius: 25%;
     padding: 2rem;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
   }
 
   .btn1 {
@@ -68,13 +79,14 @@
   }
 
   h1 {
-      margin: 1.2rem;
-      font-size: 2.5rem;
-      padding-bottom: 1rem;
-    }
+    margin: 1.2rem;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+  }
 
-    #spanid {
-      font-size: 2rem;
-      font-weight: bold;
-    }
+  .spanQuestion {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
 </style>
