@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import { ref } from 'vue';
+  import VideoVibe from './components/VideoVibe.vue';
 
   const vibePass = ref(false);
   const vibeImprove = ref(false);
@@ -24,18 +25,8 @@
         <button class="btn1" @click="vibeDo">Type shii 🔥</button>
         <button class="btn2" @click="vibeDont">Nah fam 🥀</button>
       </div>
-      <div v-if="vibePass">
-        <video width="320" height="180" autoplay>
-          <source src="/goat.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div v-if="vibeImprove">
-        <video width="320" height="180" autoplay>
-          <source src="/qeres.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <VideoVibe v-if="vibePass" :videoName="'/goat.mp4'" />
+      <VideoVibe v-if="vibeImprove" :videoName="'/qeres.mp4'" />
     </div>
   </header>
 </template>
@@ -74,11 +65,6 @@
     margin: 0.5rem;
     font-style: italic;
     background-color: gray;
-  }
-
-  video {
-    border: 0px;
-    border-radius: 5%;
   }
 
   h1 {
