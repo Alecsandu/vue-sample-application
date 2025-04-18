@@ -1,15 +1,18 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-const vibePass = ref(false);
-const vibeImprove = ref(false);
-const vibeDo = () => {
-  vibePass.value = !vibePass.value;
-  vibeImprove.value = false;
-};
-const vibeDont = () => {
-  vibePass.value = false;
-  vibeImprove.value = !vibeImprove.value;
-};
+  import { ref } from 'vue';
+
+  const vibePass = ref(false);
+  const vibeImprove = ref(false);
+
+  const vibeDo = () => {
+    vibePass.value = !vibePass.value;
+    vibeImprove.value = false;
+  };
+  
+  const vibeDont = () => {
+    vibePass.value = false;
+    vibeImprove.value = !vibeImprove.value;
+  };
 </script>
 
 <template>
