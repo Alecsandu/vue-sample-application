@@ -17,6 +17,7 @@
 </script>
 
 <template>
+  <h1 class="main-h1">Vibe zone</h1>
   <div class="container-main">
     <div class="wrapper">
       <h1>Vibe check ✅</h1>
@@ -32,6 +33,15 @@
 </template>
 
 <style scoped>
+  .main-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(in lch, rgb(67, 3, 90), rgb(72, 35, 167));
+    margin: 0;
+  }
+
   .container-main {
     display: flex;
     justify-content: center;
