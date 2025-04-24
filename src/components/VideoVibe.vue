@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <video width="320" height="180" autoplay>
+    <video autoplay>
         <source :src="videoName" type="video/mp4">
         <p>Your browser does not support the video tag.</p>
     </video>
@@ -14,6 +14,9 @@
 <style lang="css" scoped>
   video {
     border: 0px;
-    border-radius: 5%;
+    margin: 0;
+    width: 16rem;
+    height: auto;
+    border-radius: 50%;
   }
 </style>
