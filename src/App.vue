@@ -1,15 +1,22 @@
 <script setup lang="ts">
   import VibeTitle from './components/VibeTitle.vue';
   import VibeChecker from './components/VibeChecker.vue';
+  import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/vue';
 </script>
 
 <template>
-  <header>
-    <VibeTitle/>
-  </header>
-  <main class="background">
-    <VibeChecker/>
-  </main>
+  <SignedOut>
+    <header>
+      <VibeTitle/>
+      <SignInButton />
+    </header>
+  </SignedOut>
+  <SignedIn>
+    <main class="background">
+      <VibeChecker/>
+      <UserButton />
+    </main>
+  </SignedIn>
 </template>
 
 <style lang="css" scoped>

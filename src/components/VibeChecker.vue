@@ -9,7 +9,7 @@
     vibePass.value = !vibePass.value;
     vibeImprove.value = false;
   };
-  
+
   const vibeDont = () => {
     vibePass.value = false;
     vibeImprove.value = !vibeImprove.value;
@@ -26,8 +26,8 @@
         <button class="btn2" @click="vibeDont">Nah fam 🥀</button>
       </div>
       <div>
-        <VideoVibe v-if="vibePass" :videoName="'/goat.mp4'" />
-        <VideoVibe v-if="vibeImprove" :videoName="'/qeres.mp4'" />
+        <VideoVibe v-if="vibePass" :videoName="'goat.mp4'" />
+        <VideoVibe v-if="vibeImprove" :videoName="'qeres.mp4'" />
       </div>
     </div>
   </section>
@@ -52,7 +52,7 @@
     border-radius: 15px;
     padding: 0.2rem;
   }
-  
+
   .checker-title {
     margin: 1.2rem;
     font-size: 2.5rem;
@@ -65,7 +65,7 @@
     font-weight: bold;
     text-align: center;
   }
-  
+
   .buttons {
     display: flex;
     justify-content: center;
