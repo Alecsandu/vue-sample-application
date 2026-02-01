@@ -76,7 +76,7 @@
   .btn1 {
     border-radius: 15px;
     font-size: 1.5rem;
-    border: 0px;
+    border: 0;
     padding: 0.2rem;
     margin: 0.5rem;
     background-color: rgb(32, 201, 26);
@@ -86,7 +86,7 @@
   .btn2 {
     border-radius: 15px;
     font-size: 1.5rem;
-    border: 0px;
+    border: 0;
     padding: 0.2rem;
     margin: 0.5rem;
     font-style: italic;

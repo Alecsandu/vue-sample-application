@@ -13,7 +13,7 @@
 
 <style lang="css" scoped>
   video {
-    border: 0px;
+    border: 0;
     margin: 0;
     width: 16rem;
     height: auto;

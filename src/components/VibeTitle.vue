@@ -16,7 +16,7 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    border: 0px;
+    border: 0;
 
     background: linear-gradient(90deg,rgb(104, 0, 173, 1) 0%, rgba(117, 242, 92, 0.93) 50%, rgb(245, 8, 8) 100%);
   }
